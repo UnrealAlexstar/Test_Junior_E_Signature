@@ -12,9 +12,9 @@
 using namespace std;
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
-int GetLineHash(string line) // кодируем строку
+INT64 GetLineHash(string line) // кодируем строку
 {
-    int result = 0;
+    INT64 result = 0;
     int i = 1;
     for (char c : line) // каждый символ в строке складываем и умножаем на i
     {
